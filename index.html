@@ -45,8 +45,11 @@
 </head>
 
 <body>
-	 
-	<script firebase.auth()
+     
+     
+     <script 
+	     var provider = new firebase.auth.GoogleAuthProvider();
+	     firebase.auth()
     .signInWithPopup(provider)
     .then((result) => {
       /** @type {firebase.auth.OAuthCredential} */
