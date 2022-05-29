@@ -1,14 +1,13 @@
-// Using a redirect.
-firebase.auth().getRedirectResult().then(function(result) {
-  if (result.credential) {
-    // This gives you a Google Access Token.
-    var token = result.credential.accessToken;
-  }
-  var user = result.user;
+var provider = new firebase.auth.GoogleAuthProvider();
+
+provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+firebase.auth().languageCode = 'it';
+// To apply the default browser preference instead of explicitly setting it.
+// firebase.auth().useDeviceLanguage();
+
+provider.setCustomParameters({
+  'login_hint': 'user@example.com'
 });
 
-// Start a sign in process for an unauthenticated user.
-var provider = new firebase.auth.GoogleAuthProvider();
-provider.addScope('profile');
-provider.addScope('email');
-firebase.auth().signInWithRedirect(provider);
+
