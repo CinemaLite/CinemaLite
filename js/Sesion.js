@@ -7,6 +7,10 @@ import "firebase/auth";
 // ==========================================================================================
 // Docs: Snippets in this file are "general purpose" and are used on more than one docs page
 // ==========================================================================================
+firebase.initializeApp(firebaseConfig);
+
+	const auth=firebase.auth();
+
 
 function makeGoogleCredential(googleUser) {
   // [START auth_make_google_credential]
