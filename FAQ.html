@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/common_style.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="/css/FQA.css" />
+    <title>Preguntas Frecuentes - CinemaLite</title>
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAbqZ98ysatV3ozNJCG_LniUNYwvA8o-Q0",
+        authDomain: "cinemalite-92071.firebaseapp.com",
+        projectId: "cinemalite-92071",
+        storageBucket: "cinemalite-92071.appspot.com",
+        messagingSenderId: "330227688776",
+        appId: "1:330227688776:web:787cc6915d74a5f524bf7d",
+        measurementId: "G-HW1B5HCVZH",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <div class="transluscent-mat">
+      <header>
+        <div class="header">
+          <div id="bannerimage">
+            <img id="bannerjpg" src="../images/cinema.png" alt="Cinema Lite" />
+          </div>
+          <div id="bannerlogo">
+            <a class="homelink" href="index.html"><h1>Cinema Lite</h1></a>
+          </div>
+        </div>
+      </header>
+
+      <div class="shiftup">
+        <!--Navigation menu-->
+        <nav>
+          <ul class="navigation">
+            <li class="nav">
+              <a href="index.html" id="currentlink">Novedades</a>
+            </li>
+            <li class="nav">
+              <a href="cartelera.html">Cartelera</a>
+            </li>
+            <li class="nav">
+              <a href="ticket.html">Procesar compra</a>
+            </li>
+            <li class="nav">
+              <a href="ubicacion.html">Ubicación</a>
+            </li>
+            <li class="nav">
+              <a href="FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="container-faq">
+              <div class="title-faq">
+              <h3>Preguntas Frecuentes</h3>
+              </div>
+              
+          <div class="item-faq">
+            <div class="question">
+              <h3>¿Quienes somos? <span>P</span></h3>
+              <div class="more"> <i>+</i></div>
+            </div>
+            <div class="answer">
+              <p>CinemaLite es una empresa mexicana con el objetivo de crear un verdadero valor de diversión, comodidad y entretenimiento para sus clientes. 
+                <br>Nuestra misión es dar a nuestros invitados la mejor experiencia de entretenimiento, basada en el esfuerzo, talento y compromiso de todos, generando valor, innovación y mucha diversión. <span>R</span></p>
+            </div>
+
+            <div class="item-faq">
+            <div class="question">
+              <h3>Valores <span>P</span></h3>
+              <div class="more"> <i>+</i></div>
+            </div>
+            <div class="answer">
+              <p>- Buscar y provocar relaciones duraderas
+                <br>- Creer que en esencia la gente actúa por buena fe
+                <br>- Tener una actitud de dar siempre lo mejor
+                <br>- Hacerlo todo con pasión
+                <br>- Ejercer rectitud en todas nuestras acciones y decisiones
+                <br>- Superar de manera continua nuestros estándares
+                <br>- Ser consistentes en el pensar, decir y actuar
+                <br>- Aceptar las diferencias y tratar a todos con dignidad
+                <br>- Disfrutar y gozar todo lo que hacemos <span>R</span></p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+    <script src="/js/scripts.js"></script>
+      </body>
+</html>
