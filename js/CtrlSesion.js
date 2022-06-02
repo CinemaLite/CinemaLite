@@ -4,10 +4,6 @@ import {
 import {
   muestraError
 } from "../lib/util.js";
-import {
-  iniciaSesión,
-  terminaSesión
-} from "./seguridad.js";
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
