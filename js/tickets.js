@@ -4,6 +4,7 @@ function booking(id){
 	this.id = id;
 	this.fetchBookingInformation = function() { return localStorage.getItem(this.id);}
 	this.updateBookingInformation = function(tmpBooking) { localStorage.setItem(this.id, tmpBooking);}
+	console.log(id+"ESTE es el ID")
 }
 
 // Extract GET name-value pair.
