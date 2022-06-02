@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Puru Bhagat" />
+    <title>
+        Cinema Lite  | Compra
+    </title>
+    <link rel="stylesheet" content="text/css" href="../css/common_style.css" media="all" />
+    <link rel="stylesheet" content="text/css" href="../css/ticket.css" media="all" />
+</head>
+
+<body>
+	<div class="transluscent-mat">
+        <header>
+            <div class="header">
+                <div id="bannerimage">
+                    <img id="bannerjpg" src="../images/cinema.png" alt="Cinema Lite" />
+                </div>
+                <div id="bannerlogo">
+                    <a class="homelink" href="index.html"><h1>Cinema Lite</h1></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="shiftup">
+            <!--Navigation menu-->
+            <nav>
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="cartelera.html">Cartelera</a>
+                    </li>
+                    <li class="nav">
+                        <a href="boletos.html">Boletos</a>
+                    </li>
+                    <li class="nav">
+                        <a href="ubicacion.html">Ubicacíon</a>
+                    </li>
+                    <li class="nav">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="layout">
+                <h4 class="pageheading">COMPRA</h4>
+                <h2 id="movie_title"></h2>
+				<h4 id="movie_in"></h4>
+				<div id="screen_container">
+					<div id="screen">
+						<strong>PANTALLA</strong>
+					</div>
+					<div class="table" id="table">
+	
+					</div>
+					<br>
+					<div id="form_container">
+						<form action="imprimir.html".html" method="GET">
+							<button type="submit" onclick="return submitForm();">Procesar</button>
+						</form>
+					</div>
+					<br>
+					<div id="info">
+						<div class="colour-block" id="available"></div><span class="status">Disponible</span>
+						<div class="colour-block" id="unavailable"></div><span class="status">No Disponible</span>
+						<div class="colour-block" id="selected"></div><span class="status">Seleccionados</span>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    
+     <footer>
+        <hr />
+        <div id="bottomfooter">
+            <span>
+                ©Cinema Lite 2022 (Equipo 5 MPS 3CM60).
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+	<script type="text/javascript" src="../js/movie_info.js"></script>
+	<script type="text/javascript" src="../js/tickets.js"></script>
+</body>
+
+</html>
