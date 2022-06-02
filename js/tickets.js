@@ -2,9 +2,22 @@
 
 function booking(id){
 	this.id = id;
-	this.fetchBookingInformation = function() { return localStorage.getItem(this.id);}
-	this.updateBookingInformation = function(tmpBooking) { localStorage.setItem(this.id, tmpBooking);}
-	console.log(id+"ESTE es el ID")
+	this.fetchBookingInformation = function() { 
+		if(localStorage.getItem(this.id)==null){
+		    return readCookie(id);
+		}
+		else
+		return localStorage.getItem(this.id);
+	
+	}
+	this.updateBookingInformation = function(tmpBooking) {
+		if(tmpBooking==null){
+			document.cookie=id;
+		}
+		else{
+			localStorage.setItem(this.id, tmpBooking);
+		}
+	}
 }
 
 // Extract GET name-value pair.
