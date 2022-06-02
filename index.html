@@ -8,6 +8,37 @@
     <title>
         Cinema Lite  | Inicio
     </title>
+	 <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js">
+    </script>
+  <!--
+    Agrega el manejo de
+    autenticación.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js">
+    </script>
+  <!--
+    Agrega el manejo de bases de
+    datos.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js">
+    </script>
+  
+  <!--
+    Configura la app usando la
+    información del sitio de
+    Firebase.
+  -->
+  <script src="js/init.js" ></script>
+  <script src="js/Sesion.js"></script>
+	  
+    <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" type="text/css" href="../css/common_style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../css/homepage.css" media="all" />
 </head>
@@ -101,6 +132,9 @@
                 ©Cinema Lite 2022 (Equipo 5 MPS 3CM60).
             </span>
         </div>
+	   <script type="module"
+    src="js/CtrlSesion.js">
+    </script>
     </footer>
 </body>
 
