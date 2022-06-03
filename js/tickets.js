@@ -4,7 +4,7 @@ function booking(id){
 	this.id = 36;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
-		    return id;
+		    return this.id;
 		}
 		else
 		return localStorage.getItem(this.id);
