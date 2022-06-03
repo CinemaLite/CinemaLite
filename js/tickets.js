@@ -4,7 +4,7 @@ function booking(id){
 	this.id = id;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
-		    return readCookie(id);
+		    return id;
 		}
 		else
 		return localStorage.getItem(this.id);
