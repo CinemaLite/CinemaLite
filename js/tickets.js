@@ -1,7 +1,7 @@
 //API
 
 function booking(id){
-	this.id = 36;
+	this.id = 0;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
 		    return this.id;
