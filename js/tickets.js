@@ -23,12 +23,12 @@ function getCookie(name) {
 function booking(id){
 	this.id = id;
 	this.fetchBookingInformation = function() { 
-		if(localStorage.getItem(this.id)==null){
+		if(localStorage.getItem(id)==null){
 		    //return id;
-		    return getCookie(id,"000000000000",30);
+		    return getCookie(id);
 		}
 		else
-		return localStorage.getItem(this.id);
+		return localStorage.getItem(id);
 	
 	}
 	this.updateBookingInformation = function(tmpBooking) {
@@ -37,7 +37,7 @@ function booking(id){
 			setCookie(id,"010000000001",30)
 		}
 		else{
-			localStorage.setItem(this.id, tmpBooking);
+			localStorage.setItem(id, tmpBooking);
 		}
 	}
 }
