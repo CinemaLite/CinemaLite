@@ -25,6 +25,7 @@ function booking(id){
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(id)==null){
 		    //return id;
+		    console.log("Si entro con id:"+id);
 		    return getCookie(id);
 		}
 		else
