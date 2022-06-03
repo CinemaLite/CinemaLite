@@ -1,10 +1,31 @@
 //API
 
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
 function booking(id){
 	this.id = id;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
-		    return id;
+		    //return id;
+		    return getCookie(id,"000000000000",30);
 		}
 		else
 		return localStorage.getItem(this.id);
@@ -12,7 +33,8 @@ function booking(id){
 	}
 	this.updateBookingInformation = function(tmpBooking) {
 		if(tmpBooking==null){
-			document.cookie=id;
+			//document.cookie=id;
+			setCookie(id,"010000000001",30)
 		}
 		else{
 			localStorage.setItem(this.id, tmpBooking);
@@ -26,8 +48,8 @@ var parts = window.location.search.substr(1).split("&");
 var dateID = parts[0].slice(-1);
 var timeID = parts[1].slice(-1);
 var titleID = parts[2].slice(-1);
-var ID = "" + titleID + "8" + timeID;
-//var ID = "" + titleID + dateID + timeID;
+//var ID = "" + titleID + "8" + timeID;
+var ID = "" + titleID + dateID + timeID;
 //console.log(ID);
 
 document.getElementById('movie_title').innerHTML = movie_info.movies[titleID].Name;
