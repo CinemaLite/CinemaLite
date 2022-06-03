@@ -25,13 +25,13 @@ function booking(id){
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(id)==null){
 		    //return id;
-		    console.log("Si entro con id:"+id);
-			if(getCookie(id)!=0){
-				console.log("Si entro2 con id:"+id);
-			    return getCookie(id);
+			if(getCookie(id)==null){
+			    console.log("Inicializo");
+			    setCookie(id,"000000000000000000000000000000000000",30);
+			    return getCookie(id);				
 			}
 			else
-			   return 0;
+			    return getCookie(id);
 		}
 		else
 		return localStorage.getItem(id);
@@ -40,7 +40,7 @@ function booking(id){
 	this.updateBookingInformation = function(tmpBooking) {
 		if(tmpBooking==null){
 			//document.cookie=id;
-			setCookie(id,1,30)
+			setCookie(id,tmpBooking,30)
 		}
 		else{
 			localStorage.setItem(id, tmpBooking);
