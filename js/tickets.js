@@ -1,10 +1,10 @@
 //API
 
 function booking(id){
-	this.id = 12;
+	this.id = id;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
-		    return this.id;
+		    return id;
 		}
 		else
 		return localStorage.getItem(this.id);
@@ -12,7 +12,7 @@ function booking(id){
 	}
 	this.updateBookingInformation = function(tmpBooking) {
 		if(tmpBooking==null){
-			document.cookie=this.id;
+			document.cookie=id;
 		}
 		else{
 			localStorage.setItem(this.id, tmpBooking);
@@ -26,7 +26,8 @@ var parts = window.location.search.substr(1).split("&");
 var dateID = parts[0].slice(-1);
 var timeID = parts[1].slice(-1);
 var titleID = parts[2].slice(-1);
-var ID = "" + titleID + dateID + timeID;
+var ID = "" + titleID + "8" + timeID;
+//var ID = "" + titleID + dateID + timeID;
 //console.log(ID);
 
 document.getElementById('movie_title').innerHTML = movie_info.movies[titleID].Name;
