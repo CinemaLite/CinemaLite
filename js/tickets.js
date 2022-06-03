@@ -1,7 +1,7 @@
 //API
 
 function booking(id){
-	this.id = 0;
+	this.id = 12;
 	this.fetchBookingInformation = function() { 
 		if(localStorage.getItem(this.id)==null){
 		    return this.id;
@@ -12,7 +12,7 @@ function booking(id){
 	}
 	this.updateBookingInformation = function(tmpBooking) {
 		if(tmpBooking==null){
-			document.cookie=id;
+			document.cookie=this.id;
 		}
 		else{
 			localStorage.setItem(this.id, tmpBooking);
