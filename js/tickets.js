@@ -26,12 +26,12 @@ function booking(id){
 		if(localStorage.getItem(id)==null){
 		    //return id;
 		    console.log("Si entro con id:"+id);
-			if(getCookie(id)==1){
-				console.log("Si entro con id:"+id);
+			if(getCookie(id)!=0){
+				console.log("Si entro2 con id:"+id);
 			    return getCookie(id);
 			}
 			else
-				return 0;
+			   return 0;
 		}
 		else
 		return localStorage.getItem(id);
