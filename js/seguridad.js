@@ -1,12 +1,14 @@
 import {
   getAuth,
+  getFirestore
 } from "../lib/fabrica.js";
 import {
   muestraError
 } from "../lib/util.js";
 
- /**const daoUsuario = firestore.
-  collection("Usuario");*/
+const firestore = getFirestore();
+const daoUsuario = firestore.
+  collection("Usuario");
 
 export async function
   iniciaSesión() {
