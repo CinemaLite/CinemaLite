@@ -5,7 +5,6 @@ import {
   muestraError
 } from "../lib/util.js";
 
-const firestore = getFirestore();
 const daoUsuario = firestore.
   collection("Usuario");
 
