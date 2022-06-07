@@ -144,7 +144,7 @@ var submitForm = function submitForm(){
 	}
 
 	var str =  movie_info.movies[titleID].Name + " - " + movie_info.movies[titleID].Time[timeID] + " - " + movie_info.movies[titleID].Date[dateID];
-	str = str + "\nThe following seats were booked: " + elements;
+	str = str + "\nSe reservaron los siguientes asientos: " + elements;
 	var r = window.confirm(str);
 
 	if(r == true){
