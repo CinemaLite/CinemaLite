@@ -1,6 +1,5 @@
 import {
   getAuth,
-  getFirestore
 } from "../lib/fabrica.js";
 import {
   muestraError
