@@ -5,8 +5,8 @@ import {
   muestraError
 } from "../lib/util.js";
 
-const daoUsuario = firestore.
-  collection("Usuario");
+ /**const daoUsuario = firestore.
+  collection("Usuario");*/
 
 export async function
   iniciaSesión() {
