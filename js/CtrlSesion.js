@@ -47,7 +47,7 @@ async function
       usuario.displayName || "";
     avatar.src =
       usuario.photoURL || ""; */
-    forma.terminarSesión.
+    form.terminarSesión.
       addEventListener(
         "click", terminaSesión);
   } else {
