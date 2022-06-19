@@ -1,78 +1,112 @@
 #feature {
-    height: 27.5px;
-    width: 265px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    font-family: Arial, Arial;
-    color: black;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 1px 1px 1px black;
-    background: linear-gradient(to right, #0370ff, #81b8ff);
+  height: 27.5px;
+  width: 265px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  font-family: Arial, Arial;
+  color: black;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 1px 1px 1px black;
+  background: linear-gradient(to right, #0370ff, #81b8ff);
 }
-        
-#featuretext{
-    position: relative;
-    top: 4px;
+
+#featuretext {
+  position: relative;
+  top: 4px;
 }
 
 #textright {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-        
+
 video {
-    width: 455px;
-    height: 315px;
+  width: 455px;
+  height: 315px;
 }
-      
+
 .pfeature {
-    margin-bottom: 10px;
-    padding-right: 2px;
+  margin-bottom: 10px;
+  padding-right: 2px;
 }
-        
+
 .subheadings {
-    color: #1DA1F2;
-    font: 16px "Arial", Arial, Arial;
+  color: #1da1f2;
+  font: 16px "Arial", Arial, Arial;
 }
-        
+
 #movieName {
-    position: relative;
-    bottom: 5px;
+  position: relative;
+  bottom: 5px;
 }
-        
+
 .poster {
-    width: 225px;
-    height: 250px;
-    position: relative;
-    left: 115px;
+  width: 225px;
+  height: 250px;
+  position: relative;
+  left: 115px;
 }
-        
+
 .verticalline {
-    border-right: 5px solid #02234a;
+  border-right: 5px solid #02234a;
 }
-        
+
 .nowshowinglink {
-    text-decoration: none;
-    color: #c0c0c0;
+  text-decoration: none;
+  color: #c0c0c0;
 }
-        
+
 .betweenmovies {
-    border-style: dashed;
-    border-width: 0.2px;
-    color: black;
+  border-style: dashed;
+  border-width: 0.2px;
+  color: black;
 }
 
 #audioControl {
-    margin-left: 180px;
+  margin-left: 180px;
 }
 
 .icon {
-    height: 25px;
-    width: 40px;
+  height: 25px;
+  width: 40px;
 }
 
 #featureinfo {
-    position: relative;
-    top: 40px;
+  position: relative;
+  top: 40px;
+}
+
+/* CSS para los botones Sala 1, Sala 2, Sala3 */
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+  height: 28px;
+}
+
+.sala1 {
+  background-color: rgb(39, 189, 25);
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.sala2 {
+  background-color: #a0219a;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.sala3 {
+  background-color: rgb(219, 155, 16);
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
 }
