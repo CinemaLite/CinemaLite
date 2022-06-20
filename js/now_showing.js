@@ -1,6 +1,6 @@
 var movie_info = { 'movies':[
                             {
-                                'Name': 'The Batman',
+                                'Name': 'Minions 2',
                                 'Date': ['13 Junio 2022', '14 Junio 2022', '15 Junio 2022'],
                                 'Time': ['10:00 - 12:15','19:00 - 21:15', '21:30 - 23:45'],
                             },
