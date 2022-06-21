@@ -136,3 +136,49 @@ var date,time;
 	}
 	
 }
+
+{
+    var movie_name = form[4].getElementsByClassName('form_movie_name')[0];
+	var dates = form[4].getElementsByTagName('select')[0];
+	var times = form[4].getElementsByTagName('select')[1];
+
+	movie_name.innerHTML = movie_info.movies[4].Name;
+
+	for(date=0; date<3; date++){
+		var opt = document.createElement('option');
+		opt.value = date;
+		opt.innerHTML = movie_info.movies[4].Date[date];
+		dates.appendChild(opt);
+	}
+
+	for(time=0; time<3; time++){
+		var opt = document.createElement('option');
+		opt.value = time;
+		opt.innerHTML = movie_info.movies[4].Time[time];
+		times.appendChild(opt);
+	}
+	
+}
+{
+    var movie_name = form[5].getElementsByClassName('form_movie_name')[0];
+	var dates = form[5].getElementsByTagName('select')[0];
+	var times = form[5].getElementsByTagName('select')[1];
+
+	movie_name.innerHTML = movie_info.movies[5].Name;
+
+	for(date=0; date<3; date++){
+		var opt = document.createElement('option');
+		opt.value = date;
+		opt.innerHTML = movie_info.movies[5].Date[date];
+		dates.appendChild(opt);
+	}
+
+	for(time=0; time<3; time++){
+		var opt = document.createElement('option');
+		opt.value = time;
+		opt.innerHTML = movie_info.movies[5].Time[time];
+		times.appendChild(opt);
+	}
+	
+}
+
