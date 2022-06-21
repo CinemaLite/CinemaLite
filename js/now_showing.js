@@ -114,5 +114,25 @@ var date,time;
 	}
 	
 }
+{
+    var movie_name = form[3].getElementsByClassName('form_movie_name')[0];
+	var dates = form[3].getElementsByTagName('select')[0];
+	var times = form[3].getElementsByTagName('select')[1];
 
-    
+	movie_name.innerHTML = movie_info.movies[3].Name;
+
+	for(date=0; date<3; date++){
+		var opt = document.createElement('option');
+		opt.value = date;
+		opt.innerHTML = movie_info.movies[3].Date[date];
+		dates.appendChild(opt);
+	}
+
+	for(time=0; time<3; time++){
+		var opt = document.createElement('option');
+		opt.value = time;
+		opt.innerHTML = movie_info.movies[3].Time[time];
+		times.appendChild(opt);
+	}
+	
+}
