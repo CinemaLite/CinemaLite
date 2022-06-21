@@ -6,13 +6,13 @@ var movie_info = { 'movies':[
                             },
                             
                             {
-                                'Name': 'Dr Strange 2',
+                                'Name': 'Sonic 2',
                                 'Date': ['21 Junio 2022', '22 Junio 2022', '23 Junio 2022'],
                                 'Time':['12:00 - 13:45', '16:30 - 18:15', '23:00 - 00:45'],
                             },
                             
                             {
-                                'Name':'Sonic 2',
+                                'Name':'Dr Strange Multiverse of Madness',
                                 'Date': ['21 Junio 2022', '22 Junio 2022', '23 Junio 2022'],
                                 'Time':['14:00 - 16:15', '18:00 - 20:15', '21:30 - 23:45'],
                             },
